@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="imgs/SC-favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/Estilos/SC_Gerais.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/Estilos/SC_contato.css"preload>
 </head>
 <body>
   <header>
@@ -27,12 +28,24 @@
       </div>
     </nav>
   </header>
-
   <main>
-    <!-- Conteúdo da página Sobre -->
-    <h1>Sobre Nós</h1>
-    <p>Aqui você conta a história da sua empresa, missão, visão, etc.</p>
-  </main>
+
+ 
+    <h1>Entre em Contato</h1>
+    <form id="contatoForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Seu Nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Seu Email" required>
+
+        <label for="mensagemTexto">Mensagem:</label>
+        <textarea id="mensagemTexto" placeholder="Sua Mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="mensagem">✅ Mensagem enviada com sucesso!</p>
+</main>
 
   <footer>
     <div class="links_social">
@@ -46,5 +59,6 @@
 
   <script src="assets/interações/SC_Gerais.js"></script>
   <script src="assets/interações/hamburguer.js"></script>
+  <script src="assets/interações/js/script.js"></script>
 </body>
 </html>

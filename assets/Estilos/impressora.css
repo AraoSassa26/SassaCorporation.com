@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+main::after {
+    content: "Artigo escrito por Arão Sassa";
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+
+nav , .links_social{ 
+    display: none;
+}

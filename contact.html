@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Sassa Corporation</title>
+  <meta name="description" content="Entre em contato com a Sassa Corporation para dúvidas, sugestões ou orçamentos.">
+  <link rel="icon" href="imgs/SC-favicon.ico" type="image/png">
+  <link rel="stylesheet" href="css/base.css"reload>
+  <link rel="stylesheet" href="css/contact.css"reload>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="imgs/SC-logo.png" alt="Logo da Sassa Corporation">
+        </a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="projects.html">Projetos</a></li>
+        <li><a href="news.html">Notícias &amp; Eventos</a></li>
+        <li><a href="contact.html" class="active">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-info">
+      <h1>Fale Conosco</h1>
+      <p>Queremos ouvir você! Entre em contato e descubra como podemos ajudar a transformar seu projeto.</p>
+      <p>Ligue para <strong>(+244) 924 795 962</strong> ou envie um e-mail para <a href="mailto:suporte_sassacorporation@protonmail.com " target="_blank" > suporte_sassacorporation</a>.</p>
+      <!-- Links para GitHub e ORCID -->
+      <div class="social-links">
+        <a href="https://github.com/SassaCorporation" target="_blank">GitHub</a>
+        <a href="https://orcid.org/0009-0001-5610-5202" target="_blank">ORCID</a>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <form id="contato-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Mapa de Localização (Exemplo) -->
+    <section class="map">
+      <h2>Onde Estamos</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.79500512186!2d15.7601951!3d-12.8449445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1bb777c739e1f0d3%3A0x3336d6365d712872!2sHuambo!5e0!3m2!1spt-BR!2sao!4v1711020301123"
+          width="600" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sassa Corporation. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

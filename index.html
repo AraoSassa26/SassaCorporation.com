@@ -1,74 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C8KJXSWS5T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C8KJXSWS5T');
-</script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SC-Home</title>
-  <link rel="shortcut icon" href="imgs/SC-favicon.ico" type="image/x-icon">
-  <!-- Carrega o CSS global -->
-  <link rel="stylesheet" href="assets/Estilos/SC_Gerais.css">
-  <!-- Ícones -->
-   <link rel="stylesheet" href="assets/Estilos/SC-Index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Home - Sassa Corporation</title>
+  <meta name="description" content="Sassa Corporation - Inovação, tecnologia e design para transformar ideias em realidade.">
+  <!-- Favicon -->
+  <link rel="icon" href="imgs/SC-favicon.ico" type="image/png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css" reload>
+  <link rel="stylesheet" href="css/index.css" reload>
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="imgs/SC-logo.png" alt="Logo da SC">
-    </div>
-    <!-- Aqui usamos as classes unificadas: .nav, .menu-list-nav, .hamburguer-nav -->
-    <nav class="nav">
-      <ul class="menu-list-nav">
-        <li><a class="links" href="index.html">Home</a></li>
-        <li><a class="links" href="sobre.html">Sobre-Nós</a></li>
-        <li><a class="links" href="servicos.html">Serviços</a></li>
-        <li><a class="links" href="contato.html">Contato</a></li>
-      </ul>
-      <div class="hamburguer-nav">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+    <nav>
+      <div class="logo">
+        <!-- Logo -->
+        <a href="index.html">
+          <img src="imgs/SC-logo.png" alt="Logo da Sassa Corporation">
+        </a>
       </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="projects.html">Projetos</a></li>
+        <li><a href="news.html">Notícias &amp; Eventos</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
     </nav>
   </header>
-  
 
   <main>
-    <!-- Conteúdo da Home -->
-    <section id="hero">
-      <h2>Criamos soluções digitais para o futuro</h2>
-      <p>Desenvolvemos sites, aplicativos e softwares para PC, ajudando empresas e profissionais a se destacarem no mundo digital.</p>
-      <a href="servicos.html" class="botao">Saiba Mais</a>
+    <!-- Seção Hero com imagem de fundo e texto inspirador -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Transformamos Ideias em Inovação</h1>
+        <p>Nós, da Sassa Corporation, unimos tecnologia e design para criar soluções que inspiram.</p>
+        <a href="about.html" class="btn">Saiba Mais</a>
+      </div>
     </section>
-    <section id="sobre">
-      <h2>Sobre Nós</h2>
-      <p>Somos a Sassa Corporation, uma empresa apaixonada por tecnologia e inovação...</p>
-      <a href="sobre.html" class="botao">Conheça Nossa História</a>
+
+    <!-- Seção Institucional -->
+    <section class="intro">
+      <h2>Bem-vindo à Sassa Corporation</h2>
+      <p>Somos referência em inovação, combinando criatividade e tecnologia para entregar resultados de excelência.</p>
+      <img src="https://via.placeholder.com/1200x400" alt="Inovação e Tecnologia">
+    </section>
+
+    <!-- Seção de Vídeo Institucional -->
+    <section class="video-section">
+      <h2>Nosso Vídeo Institucional</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="Vídeo institucional da Sassa Corporation" 
+                frameborder="0" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Seção de Destaques (Notícias em Destaque) -->
+    <section class="highlights">
+      <h2>Últimas Notícias &amp; Eventos</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://via.placeholder.com/400x250" alt="Evento Corporativo">
+          <h3>Conferência de Inovação 2025</h3>
+          <p>Participamos do maior evento de tecnologia do ano, onde apresentamos nossas soluções inovadoras...</p>
+          <a href="news.html#evento1" class="btn-link">Leia Mais</a>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/400x250" alt="Nova Parceria">
+          <h3>Nova Parceria Estratégica</h3>
+          <p>Unimos forças com parceiros para levar nossa expertise a novos mercados...</p>
+          <a href="news.html#parceria" class="btn-link">Leia Mais</a>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer>
-    <div class="links_social">
-      <a href="#"><i class="fa-solid fa-envelope" style="color: #F2F5F9; font-size: 2.5em;"></i></a>
-      <a href="#"><i class="fa-brands fa-github" style="color: #F2F5F9;font-size: 2.5em;"></i></a>
-      <a href="#"><i class="fa-brands fa-orcid" style="color: #F2F5F9;font-size: 2.5em;"></i></a>
-      <a href="#"><i class="fa-brands fa-whatsapp" style="color: #F2F5F9;font-size: 2.5em;"></i></a>
-    </div>
-    <p>&copy2025 Sassa Corporation - Todos os direitos reservados.</p>
+    <p>&copy; 2025 Sassa Corporation. Todos os direitos reservados.</p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="assets/interações/SC_Gerais.js"></script>
-  <script src="assets/interações/hamburguer.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

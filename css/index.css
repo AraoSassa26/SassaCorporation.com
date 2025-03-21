@@ -9,11 +9,13 @@
   .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: #333;
   }
   
   .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    color: #333;
   }
   
   .hero-content .btn {

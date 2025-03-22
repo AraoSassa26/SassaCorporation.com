@@ -1,25 +1,19 @@
-/* Exemplo de cores inspiradas no logo:
-   Azul-escuro: #002E5D (fundo)
-   Laranja:     #FF6000 (destaque)
-   Ajuste conforme o seu logo e preferência.
-*/
+@charset "UTF-8";
+
 
 /* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
+  
 }
 
-/* Variáveis (opcional, se quiser usar CSS Custom Properties) */
-/*
-:root {
-  --primary-color: #002E5D;
-  --accent-color:  #FF6000;
-  --white: #ffffff;
-  --gray-bg: #f4f4f4;
-}
-*/
+html{
+  scroll-behavior: smooth;
+} 
+
 
 /* Body */
 body {

@@ -16,14 +16,7 @@ if (form) {
     form.reset();
   });
 }
-import { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics';
-inject();
-
-
 import { inject } from '@vercel/analytics';
-import { inject } from 'https://unpkg.com/@vercel/analytics';
+
 inject();
-
-
- inject();
 

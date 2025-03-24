@@ -16,7 +16,4 @@ if (form) {
     form.reset();
   });
 }
-import { inject } from '@vercel/analytics';
-
-inject();
 

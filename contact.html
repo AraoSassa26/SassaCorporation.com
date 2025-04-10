@@ -36,7 +36,7 @@
     <section class="contact-info">
       <h1>Fale Conosco</h1>
       <p>Queremos ouvir você! Entre em contato e descubra como podemos ajudar a transformar seu projeto.</p>
-      <p>Ligue para <strong>(+244) 924 795 962</strong> ou envie um e-mail para <a href="mailto:suporte_sassacorporation@protonmail.com " target="_blank" > suporte_sassacorporation</a>.</p>
+      <p>Ligue para <strong>(+244) 976 032 697</strong> ou envie um e-mail para <a href="mailto:suporte_sassacorporation@protonmail.com " target="_blank" > suporte_sassacorporation</a>.</p>
       <!-- Links para GitHub e ORCID -->
       <div class="social-links">
         <a href="https://github.com/SassaCorporation" target="_blank">GitHub</a>
@@ -45,19 +45,26 @@
     </section>
 
     <section class="contact-form">
-      <form id="contato-form">
+      <form id="contato-form" action="/api/submit-form" method="POST">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
-        
+    
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-        
+    
         <label for="mensagem">Mensagem:</label>
         <textarea id="mensagem" name="mensagem" required></textarea>
-        
+    
+        <!-- reCAPTCHA -->
+        <div class="g-recaptcha" data-sitekey="6Ld7NRIrAAAAABo_4R3tgIbJiu0c-UDExYc7Aemy"></div>
+    
         <button type="submit">Enviar</button>
       </form>
     </section>
+    
+    <!-- Script para carregar o reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
 
     <!-- Mapa de Localização (Exemplo) -->
     <section class="map">

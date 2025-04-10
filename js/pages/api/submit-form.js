@@ -25,6 +25,9 @@ export default async function handler(req, res) {
     }
 
     // Processar o envio do formulário (ex: enviar e-mail ou salvar no banco de dados)
+    // Aqui você pode adicionar sua lógica de envio de email ou armazenar os dados
+
+    // Resposta de sucesso
     res.status(200).json({ message: 'Formulário enviado com sucesso!' });
   } else {
     // Caso o método HTTP não seja POST
